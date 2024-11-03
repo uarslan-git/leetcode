@@ -14,7 +14,7 @@ class Solution:
             if char in mapping.keys():
                 st.append(char)
             elif char in mapping.values():
-                if not st or char != mapping[st.pop()]:
+                if not st or char != mapping[st[-1]:
                     return False
 
         return len(st)==0
